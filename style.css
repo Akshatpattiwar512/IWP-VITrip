@@ -1,0 +1,168 @@
+.site-title
+{
+    text-align: center;
+    border: 1px black solid ;
+    margin-top: 20px;
+    font-size: 60px;
+    background-color: aqua;
+}
+.info-page
+{
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  li {
+    float: left;
+    margin: 0 142.6px;
+    text-align: center;
+    
+  }
+  
+  /* For Search dropdown*/
+  li a, .dropbtn-Categories {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown-Categories:hover .dropbtn-Categories {
+    background-color: red;
+  }
+  .info-page:hover{
+  animation: colorchange 1s ease-in-out infinite #fff;
+  }
+ @keyframes colorchange {
+   
+     0%
+    {
+        background-color: #509933;
+    }
+    25%
+    {
+        background-color:#339099 ;
+    }
+    50%
+    {
+        background-color: #643399;
+    }
+    75%
+    {
+        background-color: #993333;
+    }
+    100%
+    {
+        background-color: #339099;
+    }
+  }
+  li.dropdown-Categories {
+    display: inline-block;
+  }
+  
+  .dropdown-content-Categories {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content-Categories a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content-Categories a:hover {background-color: #f1f1f1;}
+  
+  .dropdown-Categories:hover .dropdown-content-Categories {
+    display: block;
+  }
+
+
+  /* For landmarks dropdown  */
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  p
+  {
+    font-size: 30px;
+    color: purple;
+  }
+
+  /* Academic block*/
+  .info-page-acd
+{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.info-page-acd ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+.info-page-acd li a {
+  float: left;
+  margin: 0 -5px;
+  text-align: center;
+  
+}
+
+.info-page-acd li {
+  float: left;
+  margin: 0 142.6px;
+  text-align: center;
+  
+}
