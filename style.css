@@ -1,3 +1,15 @@
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .site-title
 {
     text-align: center;
@@ -10,6 +22,8 @@
 {
     text-align: center;
     margin: 20px 0;
+    width: 100%;
+    min-width:1000px;
 }
 
 ul {
@@ -22,7 +36,7 @@ ul {
   
   li {
     float: left;
-    margin: 0 142.6px;
+    margin: 0 105px;
     text-align: center;
     
   }
@@ -135,7 +149,7 @@ ul {
   p
   {
     font-size: 30px;
-    color: purple;
+    color: rgb(0, 0, 0);
   }
 
   /* Academic block*/
