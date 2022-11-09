@@ -2,10 +2,27 @@
     <head>
         <title>Site</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bg.css">
         <link rel="javascript" href="backend.js">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Home</title> -->
     </head>
     <body>
-        <div class="site-title">VITrip</div>
+      <p id='head1' class='header'>Navigation Site</p>
+      <p id='head2' class='header'>Just</p>
+      <p id='head3' class='header'>For you</p>
+      <p id='head4' class='header'>simple and awesome all the time</p>
+      <p id='head5' class='header'>Welcome to VITravel</p>
+      <div class='light x1'></div>
+      <div class='light x2'></div>
+      <div class='light x3'></div>
+      <div class='light x4'></div>
+      <div class='light x5'></div>
+      <div class='light x6'></div>
+      <div class='light x7'></div>
+      <div class='light x8'></div>
+      <div class='light x9'></div>
+        <div class="site-title">VITravel</div>
         <div class="info-page">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,7 +34,7 @@
                       <a href="#">Shops</a>
                       <a href="#">Coffee Shops</a>
                       <a href="#">Hostel Blocks</a>
-                      <a href="#">Restaurants</a>
+                      <a href="Restaurants.html">Restaurants</a>
                       <a href="#">ATMs</a>
                       <a href="#">Pickup Points</a>
                       <a href="#">Utilities</a>
@@ -39,15 +56,18 @@
                 <li><a href="mainmap.html">Maps</a></li>
                 <li><a href="faq.html">FAQ</a></li>
               </ul>
-              <p>Welcome to VITrip</p>
+
               <p>A site for navigating around the campus without hazzle</p>
               <br><br>
-              <div style="float: left;width:40%; border:2px solid black;">
-                <p style=" font-size:20px">Navigate around the campus easily with VITrip</p>
+              
+              <div style="float: left;width:35%; border:2px solid black;">
+                <p style=" font-size:20px">Navigate around the campus easily with VITravel</p>
                 <p style=" font-size:20px">Categorized itno various facilities, you can select the place of your choice to reach the destination</p>
                 <p style=" font-size:20px">With on-map markers and locations within campus for each place like ATMs Reastaurants etc and around the university</p>
               </div>
-              <div style="float: right;width:40%; border:2px solid black; padding-right:5px">
+              <div class="weatherWidget" style="float:left ;width:350px; padding-left:2%;"></div>
+
+              <div style="float: right;width:35%; border:2px solid black; padding-right:5px">
                 <p style=" font-size:20px">Ranked within the top 200 Universities in Asia (QS - Asia University Rankings 2022)</p>
                 <p style=" font-size:20px">NAAC Accreditation with A++ grade in the 4th cycle</p>
 
@@ -55,5 +75,36 @@
 
               </div>
         </div>
+        <script>
+          function myFunction() {
+             var element = document.body;
+             element.classList.toggle("dark-mode");
+          }
+          window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+          window.weatherWidgetConfig.push({
+              selector:".weatherWidget",
+              apiKey:"QTX7BAX9EK58FSQRXMBAWDZ4A", //Sign up for your personal key
+              location:"Chennai, India", //Enter an address
+              unitGroup:"metric", //"us" or "metric"
+              forecastDays:5, //how many days forecast to show
+              title:"Vellore,India", //optional title to show in the 
+              showTitle:true, 
+              showConditions:true
+          });
+         
+          (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+          </script>
     </body>
+    <style>
+      li {
+        float: left;
+        margin: 0 85px;
+        text-align: center; 
+      }
+    </style>
 </html>
