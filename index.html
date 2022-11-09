@@ -22,8 +22,6 @@
       <div class='light x7'></div>
       <div class='light x8'></div>
       <div class='light x9'></div>
-      <!-- <p>Toggle Dark/Light Mode</h2> -->
-      <!-- <p>Click the button to toggle between dark and light mode for this page.</p> -->
         <div class="site-title">VITravel</div>
         <div class="info-page">
             <ul>
@@ -58,9 +56,7 @@
                 <li><a href="mainmap.html">Maps</a></li>
                 <li><a href="faq.html">FAQ</a></li>
               </ul>
-              <!-- <button onclick="myFunction()" style="float: right; background-color:teal">Toggle mode</button> -->
 
-              <p>Welcome to VITravel</p>
               <p>A site for navigating around the campus without hazzle</p>
               <br><br>
               
@@ -87,7 +83,7 @@
           window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
           window.weatherWidgetConfig.push({
               selector:".weatherWidget",
-              apiKey:"", //Sign up for your personal key
+              apiKey:"QTX7BAX9EK58FSQRXMBAWDZ4A", //Sign up for your personal key
               location:"Chennai, India", //Enter an address
               unitGroup:"metric", //"us" or "metric"
               forecastDays:5, //how many days forecast to show
@@ -102,7 +98,13 @@
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
           })();
-       
           </script>
     </body>
+    <style>
+      li {
+        float: left;
+        margin: 0 85px;
+        text-align: center; 
+      }
+    </style>
 </html>
